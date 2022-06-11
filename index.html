@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/main.css" />
     <link
       rel="stylesheet"
       href="./node_modules/flowbite/dist/flowbite.min.css"
@@ -44,29 +45,62 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest" />
   </head>
   <body>
-    <!-- NavBar -->
+    <div
+      class="fixed z-10 w-full opacity-80 bg-gray-50 dark:bg-gray-800 shadow-md"
+    >
+      <!-- NavBar -->
 
-    <nav class="bg-opacity-100 px-2 sm:px-4 py-3.5 mx-auto dark:bg-gray-800">
-      <div
-        class="container flex flex-wrap justify-between items-center mx-auto"
-      >
-        <a href="https://lexipimpression.com" class="flex items-center">
-          <img src="./img/LEXIP LOGO.png" class="mr-3 h-12 sm:h-9" alt="Lexip" />
-          <span
-            class="self-center text-xl font-heading whitespace-nowrap dark:text-white"
-          ></span>
-        </a>
-        <div class="flex items-center md:order-2">
+      <nav class="relative container p-3 mx-auto">
+        <!-- Flex Container -->
+
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="pt-2">
+            <a href="../index.html">
+              <img
+                src="../img/LEXIP LOGO.png"
+                class="mr-3 h-8 sm:h-9"
+                alt="Lexip"
+              />
+            </a>
+          </div>
+
+          <!-- Menu Items -->
+          <div class="hidden md:flex space-x-8" id="mobile-menu-2">
+            <a
+              href="../index.html"
+              class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
+              >Services</a
+            >
+            <a
+              href="../about.html"
+              class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
+              >About Us</a
+            >
+            <a
+              href="../src/contact.html"
+              class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Hamburger Buttons -->
+
           <button
             data-collapse-toggle="mobile-menu-2"
             type="button"
-            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-900 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="mobile-menu-2"
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
             <svg
-              class="w-6 h-6"
+              class="w-6 h-6 text-blue-600"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +112,7 @@
               ></path>
             </svg>
             <svg
-              class="hidden w-6 h-6"
+              class="hidden w-6 h-6 text-blue-600"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -91,52 +125,13 @@
             </svg>
           </button>
         </div>
-        <div
-          class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
-          id="mobile-menu-2"
-        >
-          <ul
-            class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="./about.html"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+      </nav>
+    </div>
     <!-- End NavBar -->
 
     <!-- Hero -->
     <section id="hero">
-      <div class="items-center space-y-0 md:space-y-0 w-screen">
+      <div class="items-center space-y-0 md:space-y-0 w-full">
         <div class="owl-carousel owl-header owl-theme">
           <div class="item"><img src="./img/banner.jpg" alt="" /></div>
           <div class="item"><img src="./img/branding2.jpg" alt="" /></div>
@@ -160,7 +155,7 @@
             Our Services
           </h3>
           <hr
-            class="mb-4 w-24 border-gray-100 border-8 mx-auto items-center justify-center"
+            class="mb-4 w-24 border-gray-100 border-1 mx-auto items-center justify-center"
           />
           <div
             class="p-4 w-full text-center sm:p-8 dark:bg-gray-800 dark:border-gray-700"
@@ -185,7 +180,7 @@
           class="justify-center space-y-4 sm:flex md:flex sm:space-y-0 sm:space-x-4 mb-5"
         >
           <div
-            class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            class="max-w-sm md:w-1/3 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
           >
             <a href="#">
               <img class="rounded-t-lg" src="./img/branding2.jpg" alt="" />
@@ -223,7 +218,7 @@
           </div>
 
           <div
-            class="max-w-sm space-x-5 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-4"
+            class="max-w-sm md:w-1/3 space-x-5 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-4"
           >
             <a href="#">
               <img class="rounded-t-lg" src="./img/branding.jpg" alt="" />
@@ -261,7 +256,7 @@
           </div>
 
           <div
-            class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            class="max-w-sm md:w-1/3 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
           >
             <a href="#">
               <img class="rounded-t-lg" src="./img/printing.jpg" alt="" />
@@ -304,70 +299,66 @@
 
     <!-- Brands  -->
 
-    <section id="brand">
-      <div class="p-4 items-center">
-        <h3
-          class="mt-8 mb-4 font-bold font-sans mx-auto text-center text-gray-900 text-4xl"
+    <section id="brands">
+      <div class="container items-center space-y-0 md:space-y-0 w-full mb-11">
+        <div
+          class="p-4 text-center bg-white sm:p-8 dark:bg-gray-800 dark:border-gray-700"
         >
-          Our Partners
-        </h3>
-        <hr
-          class="mb-8 w-24 hover:animate-ping border-gray-700 border-8 mx-auto items-center justify-center"
-        />
-        <div class="flex flex-col md:flex-row mt-8 gap-8 justify-center">
-          <img
-            src="./img/brands/Ralph Lauren svg.svg"
-            alt=""
-            class="w-16 sm:w-4"
+          <h5
+            class="mb-4 text-4xl font-sans font-bold text-black dark:text-white"
+          >
+            Our Partners
+          </h5>
+          <hr
+            class="mb-8 w-24 border-gray-900 border-1 mx-auto items-center justify-center"
           />
-          <img src="./img/brands/Dior svg.svg" alt="" class="w-14 sm:w-4" />
-          <img
-            src="./img/brands/Fenty Beauty svg.svg"
-            alt=""
-            class="w-16 sm:w-4"
-          />
-          <img
-            src="./img/brands/Paco Rabanne svg.svg"
-            alt=""
-            class="w-16 sm:w-4"
-          />
-          <img
-            src="./img/brands/Jean Paul Gaultier - jpeg.svg"
-            alt=""
-            class="w-14 sm:w-4"
-          />
-        </div>
-        <div class="flex flex-col md:flex-row mt-2 gap-8 justify-center">
-          <img src="./img/brands/Clarins svg.svg" alt="" class="w-16 sm:w-4" />
-          <img src="./img/brands/Clinique svg.svg" alt="" class="w-16 sm:w-4" />
-          <img src="./img/brands/Lancôme svg.svg" alt="" class="w-16 sm:w-4" />
-          <img
-            src="./img/brands/yvessaintlaurent.com - jpeg.svg"
-            alt=""
-            class="w-14"
-          />
-          <img
-            src="./img/brands/Essenza - jpeg 0.svg"
-            alt=""
-            class="w-14 sm:w-4"
-          />
+
+          <div class="owl-carousel owl-brands">
+            <div class="item">
+              <img src="../img/brands/Clarins svg.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Clinique svg.svg" alt="" />
+            </div>
+            <div class="item"><img src="../img/brands/D&G.svg" alt="" /></div>
+            <div class="item">
+              <img src="../img/brands/Dior svg.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Fenty Beauty svg.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Giorgio Armani.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Lancôme svg.svg" alt="" />
+            </div>
+            <div class="item"><img src="../img/brands/NR.svg" alt="" /></div>
+            <div class="item">
+              <img src="../img/brands/Paco Rabanne svg.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Ralph Lauren svg.svg" alt="" />
+            </div>
+            <div class="item"><img src="../img/brands/YSL.svg" alt="" /></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Gallery -->
     <section id="gallery">
-      <div class="items-center space-y-0 md:space-y-0 w-screen mb-11">
+      <div class="items-center space-y-0 md:space-y-0 w-full mb-11">
         <div
           class="p-4 text-center bg-black sm:p-8 dark:bg-gray-800 dark:border-gray-700"
         >
           <h5
-            class="mb-4 text-4xl font-sans font-bold text-gray-900 dark:text-white"
+            class="mb-4 text-4xl font-sans font-bold text-gray-100 dark:text-white"
           >
             GALLERY
           </h5>
           <hr
-            class="mb-8 w-24 border-gray-700 border-8 mx-auto items-center justify-center"
+            class="mb-8 w-24 border-gray-100 border-1 mx-auto items-center justify-center"
           />
 
           <div class="owl-carousel owl-gallery">
@@ -383,15 +374,11 @@
 
     <!-- Footer -->
 
-    <footer class="p-4 bg-black sm:p-6 dark:bg-gray-800">
+    <footer class="mt-44 p-4 bg-blue-100 sm:p-6 dark:bg-gray-800">
       <div class="md:flex md:justify-between">
         <div class="mb-6 sm:mt-6 md:mb-0">
-          <a href="https://lexipimpression.com" class="flex items-center">
-            <img
-              src="./img/LEXIP LOGO.png"
-              class="mr-3 h-12"
-              alt="Lexip"
-            />
+          <a href="./index.html" class="flex items-center">
+            <img src="./img/LEXIP LOGO.png" class="mr-3 h-12" alt="Lexip" />
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
             ></span>
@@ -406,10 +393,10 @@
             </h2>
             <ul class="text-gray-600 dark:text-gray-400">
               <li class="mb-4">
-                <a href="https://lexipimpression.com/about.html" class="hover:underline">About</a>
+                <a href="./about.html" class="hover:text-gray-50">About</a>
               </li>
               <li>
-                <a href="https://lexipimpression.com/contact.html" class="hover:underline"
+                <a href="./src/contact.html" class="hover:text-gray-50"
                   >Contact us</a
                 >
               </li>
@@ -423,22 +410,14 @@
             </h2>
             <ul class="text-gray-600 dark:text-gray-400">
               <li class="mb-4">
-                <a
-                  href="https://github.com/themesberg/flowbite"
-                  class="hover:underline"
-                  >Facebook</a
-                >
+                <a href="#" class="hover:text-gray-50">Facebook</a>
               </li>
               <li>
-                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline"
-                  >Linkedin</a
-                >
+                <a href="#" class="hover:text-gray-50">Linkedin</a>
               </li>
 
               <li class="mt-4">
-                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline"
-                  >Twitter</a
-                >
+                <a href="#" class="hover:text-gray-50">Twitter</a>
               </li>
             </ul>
           </div>
@@ -450,10 +429,12 @@
             </h2>
             <ul class="text-gray-600 dark:text-gray-400">
               <li class="mb-4">
-                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-50">Privacy Policy</a>
               </li>
               <li>
-                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                <a href="#" class="hover:text-gray-50"
+                  >Terms &amp; Conditions</a
+                >
               </li>
             </ul>
           </div>
@@ -464,15 +445,13 @@
       />
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-          >© 2022
-          <a href="https://lexipimpression.com" class="hover:underline"
-            >Lexip impression™</a
-          >. All Rights Reserved.
+          >© 2022 <a href="#" class="hover:text-gray-50">Lexip impression™</a>.
+          All Rights Reserved.
         </span>
         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-2">
           <a
-            href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            href="www.facebook.com"
+            class="text-gray-500 hover:text-blue-700 dark:hover:text-white"
           >
             <svg
               class="w-5 h-5"
@@ -488,8 +467,8 @@
             </svg>
           </a>
           <a
-            href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            href="www.instagram.com"
+            class="text-gray-500 hover:text-pink-600 dark:hover:text-white"
           >
             <svg
               class="w-5 h-5"
@@ -505,8 +484,8 @@
             </svg>
           </a>
           <a
-            href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            href="www.twitter.com"
+            class="text-gray-500 hover:text-blue-500 dark:hover:text-white"
           >
             <svg
               class="w-5 h-5"
@@ -547,6 +526,26 @@
             },
             1000: {
               items: 1,
+            },
+          },
+        });
+
+        $(".owl-brands").owlCarousel({
+          loop: true,
+          margin: 20,
+          autoplay: true,
+          nav: false,
+          autoHeight: true,
+          dots: false,
+          responsive: {
+            0: {
+              items: 4,
+            },
+            600: {
+              items: 5,
+            },
+            1000: {
+              items: 6,
             },
           },
         });

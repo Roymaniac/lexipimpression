@@ -1,4 +1,5 @@
 /node_modules
 /dash.html
 /newrelic_agent.log
-.editorconfig
+editorconfig
+yarn-error.log

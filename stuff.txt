@@ -1,0 +1,84 @@
+
+    <section id="brands">
+      <div class="items-center space-y-0 md:space-y-0 w-full mb-11">
+        <div
+          class="p-4 text-center bg-pink-400 sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <h5
+            class="mb-4 text-4xl font-sans font-bold text-white dark:text-white"
+          >
+            Our Partners
+          </h5>
+          <hr
+            class="mb-11 w-24 border-white border-1 mx-auto items-center justify-center"
+          />
+
+          <div class="owl-carousel owl-brands">
+            <div class="item">
+              <img src="../img/brands/Clarins svg.svg" alt="" />
+            </div>
+            <div class="item">
+              <img
+                src="../img/brands/Clinique svg.svg"
+                alt=""
+                class="lg:h-8 lg:mt-6"
+              />
+            </div>
+            <div class="item"><img src="../img/brands/D&G.svg" alt="" /></div>
+            <div class="item">
+              <img
+                src="../img/brands/Dior svg.svg"
+                alt=""
+                class="lg:h-8 lg:mt-6"
+              />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Fenty Beauty svg.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Giorgio Armani.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Lancôme svg.svg" alt="" />
+            </div>
+            <div class="item"><img src="../img/brands/NR.svg" alt="" /></div>
+            <div class="item">
+              <img src="../img/brands/Paco Rabanne svg.svg" alt="" />
+            </div>
+            <div class="item">
+              <img src="../img/brands/Ralph Lauren svg.svg" alt="" />
+            </div>
+            <div class="item"><img src="../img/brands/YSL.svg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        "use strict";
+
+        $(".owl-brands").owlCarousel({
+          loop: true,
+          margin: 20,
+          autoplay: true,
+          nav: false,
+          autoHeight: true,
+          dots: false,
+          responsive: {
+            0: {
+              items: 4,
+            },
+            600: {
+              items: 5,
+            },
+            1000: {
+              items: 6,
+            },
+          },
+        });
+      });
+    </script>
