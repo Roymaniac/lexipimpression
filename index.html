@@ -46,7 +46,7 @@
   </head>
   <body>
     <div
-      class="fixed z-10 w-full opacity-80 bg-gray-50 dark:bg-gray-800 shadow-md"
+      class="fixed z-10 w-full opacity-80 bg-gray-50 dark:bg-gray-50 shadow-md"
     >
       <!-- NavBar -->
 
@@ -148,24 +148,26 @@
 
     <section id="services">
       <div
-        class="flex flex-col px-4 w-full bg-gray-800 sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+        class="container mx-auto flex flex-col px-4 w-full sm:p-8 dark:bg-gray-800 dark:border-gray-700"
       >
         <div class="flex flex-col">
-          <h3 class="text-center p-3 text-2xl font-bold text-white">
+          <h3
+            class="text-center p-3 sm:text-md lg:text-2xl font-bold text-gray-900"
+          >
             Our Services
           </h3>
           <hr
-            class="mb-4 w-24 border-gray-100 border-1 mx-auto items-center justify-center"
+            class="mb-4 w-24 border-gray-900 border-1 mx-auto items-center justify-center"
           />
-          <div
-            class="p-4 w-full text-center sm:p-8 dark:bg-gray-800 dark:border-gray-700"
-          >
+          <div class="p-4 w-full sm:p-8 dark:bg-gray-800 dark:border-gray-200">
             <h5
-              class="mb-4 text-4xl font-bold font-serif text-white dark:text-white"
+              class="mb-4 sm:text-xl lg:text-3xl text-center font-bold font-serif text-gray-900 dark:text-white"
             >
               WHAT WE OFFER
             </h5>
-            <p class="mb-5 text-base text-white sm:text-md dark:text-gray-400">
+            <p
+              class="mb-3 text-base sm:text-left text-gray-900 sm:text-md dark:text-gray-400"
+            >
               At Lexip impression we offer you the best digital printing and
               fabrication solutions to help our client operation in various
               industries and segment we serve, we promise to exceed your
@@ -176,7 +178,7 @@
           </div>
         </div>
 
-        <div
+        <!-- <div
           class="justify-center space-y-4 sm:flex md:flex sm:space-y-0 sm:space-x-4 mb-5"
         >
           <div
@@ -291,6 +293,56 @@
               </a>
             </div>
           </div>
+        </div> -->
+
+        <!-- GRID CONTAINER -->
+        <div class="mt-8 grid md:grid-cols-3 gap-6 py-3 px-6">
+          <!-- BRAND ACTIVATION CARD -->
+          <div class="bg-white rounded overflow-hidden shadow-md">
+            <img
+              src="../img/branding.jpg"
+              alt=""
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold dark:text-gray-900">BRAND ACTIVATION</span>
+              <span class="block text-gray-500 dark:text-gray-400 text-sm"
+                >Podiums, Shop Branding, Roll Up and hanging Banners, Windows
+                and Wall branding</span
+              >
+            </div>
+          </div>
+
+          <!-- DESIGN CARD -->
+          <div class="bg-white rounded overflow-hidden shadow-md">
+            <img
+              src="../img/branding2.jpg"
+              alt=""
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold dark:text-gray-900">DESIGN</span>
+              <span class="block text-gray-500 dark:text-gray-400 text-sm">
+                Graphic Design, 3D Cutout, Display animations, Wallpapers,
+                Poster for stores</span
+              >
+            </div>
+          </div>
+
+          <!-- PRINTING CARD -->
+          <div class="bg-white rounded overflow-hidden shadow-md">
+            <img
+              src="../img/printing.jpg"
+              alt=""
+              class="w-full h-32 sm:h-48 object-cover"
+            />
+            <div class="m-4">
+              <span class="font-bold dark:text-gray-900">PRINTING</span>
+              <span class="block text-gray-500 dark:text-gray-400 text-sm">
+                In store Visual Display, Vehicle Branding</span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -300,12 +352,12 @@
     <!-- Brands  -->
 
     <section id="brands">
-      <div class="container items-center space-y-0 md:space-y-0 w-full mb-11">
-        <div
-          class="p-4 text-center bg-white sm:p-8 dark:bg-gray-800 dark:border-gray-700"
-        >
+      <div
+        class="container mx-auto items-center space-y-0 md:space-y-0 w-full mb-11"
+      >
+        <div class="p-4 bg-white sm:p-8 dark:bg-gray-800 dark:border-gray-200">
           <h5
-            class="mb-4 text-4xl font-sans font-bold text-black dark:text-white"
+            class="mb-4 sm:text-xl lg:text-3xl text-center font-sans font-bold text-black dark:text-white"
           >
             Our Partners
           </h5>
@@ -348,17 +400,17 @@
 
     <!-- Gallery -->
     <section id="gallery">
-      <div class="items-center space-y-0 md:space-y-0 w-full mb-11">
-        <div
-          class="p-4 text-center bg-black sm:p-8 dark:bg-gray-800 dark:border-gray-700"
-        >
+      <div
+        class="container items-center mx-auto space-y-0 md:space-y-0 w-full mb-11"
+      >
+        <div class="p-4 bg-black sm:p-8 dark:bg-gray-800 dark:border-gray-200">
           <h5
-            class="mb-4 text-4xl font-sans font-bold text-gray-100 dark:text-white"
+            class="mb-4 sm:text-xl lg:text-3xl text-center font-sans font-bold text-gray-100 dark:text-white"
           >
-            GALLERY
+            Gallery
           </h5>
           <hr
-            class="mb-8 w-24 border-gray-100 border-1 mx-auto items-center justify-center"
+            class="mb-8 w-16 border-gray-100 border-1 mx-auto items-center justify-center"
           />
 
           <div class="owl-carousel owl-gallery">
