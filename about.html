@@ -64,7 +64,7 @@
           </div>
 
           <!-- Menu Items -->
-          <div class="hidden md:flex space-x-8" id="mobile-menu-2">
+          <div class="hidden md:flex space-x-8">
             <a
               href="../index.html"
               class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
@@ -81,7 +81,7 @@
               >About Us</a
             >
             <a
-              href="../src/contact.html"
+              href="../contact.html"
               class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
               >Contact Us</a
             >
@@ -90,11 +90,9 @@
           <!-- Hamburger Buttons -->
 
           <button
-            data-collapse-toggle="mobile-menu-2"
             type="button"
-            class="inline-flex items-center p-2 ml-1 text-sm text-gray-900 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="mobile-menu-2"
-            aria-expanded="false"
+            id="menu-btn"
+            class="p-2 ml-1 text-sm text-gray-900 rounded-lg md:hidden hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -122,6 +120,35 @@
               ></path>
             </svg>
           </button>
+
+          <!-- Mobile menu -->
+        </div>
+        <div class="md:hidden">
+          <div
+            class="absolute flex-col hidden self-end py-8 mt-2.5 space-y-6 font-light bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-xl space-x-10"
+            id="mobile-menu-2"
+          >
+            <a
+              href="../index.html"
+              class="ml-10 text-gray-900 hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
+              >Home</a
+            >
+            <a
+              href="../service.html"
+              class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
+              >Services</a
+            >
+            <a
+              href="../about.html"
+              class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
+              >About Us</a
+            >
+            <a
+              href="../contact.html"
+              class="text-black hover:text-blue-800 font-medium dark:text-white dark:hover:bg-gray-700"
+              >Contact Us</a
+            >
+          </div>
         </div>
       </nav>
     </div>
@@ -256,7 +283,7 @@
                 <a href="./about.html" class="hover:text-blue-600">About</a>
               </li>
               <li class="mb-4">
-                <a href="./src/contact.html" class="hover:text-blue-600"
+                <a href="./contact.html" class="hover:text-blue-600"
                   >Contact us</a
                 >
               </li>
@@ -367,5 +394,10 @@
     </footer>
 
     <!-- End of Footer -->
+
+    <script src="js/script.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.js"></script>
   </body>
 </html>

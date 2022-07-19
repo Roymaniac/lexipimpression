@@ -6,3 +6,15 @@
 @tailwind utilities;
 
 
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
