@@ -215,7 +215,7 @@
           />
           <div class="p-4 w-full sm:p-8 dark:bg-gray-800 dark:border-gray-200">
             <h5
-              class="mb-4 sm:text-md lg:text-4xl text-center font-heading text-gray-900 dark:text-white"
+              class="mb-4 sm:text-md lg:text-4xl text-center font-heading1 text-gray-900 dark:text-white"
             >
               WHAT WE OFFER
             </h5>
@@ -289,7 +289,7 @@
     <!-- Brands  -->
 
     <section id="brands">
-      <div class="container items-center space-y-0 md:space-y-0 w-full mb-11">
+      <div class=" mx-auto container items-center space-y-0 md:space-y-0 w-full mb-11">
         <div class="p-4 bg-white sm:p-8 dark:bg-gray-800 dark:border-gray-200">
           <h5
             class="mb-4 sm:text-xl lg:text-3xl text-center font-heading1 text-black dark:text-white"
@@ -368,7 +368,7 @@
 
     <!-- Gallery -->
     <section id="gallery">
-      <div class="items-center space-y-0 md:space-y-0 w-full mb-11">
+      <div class="items-center space-y-0 md:space-y-0 w-full mb-6">
         <div class="p-4 bg-black sm:p-8 dark:bg-gray-800 dark:border-gray-200">
           <h5
             class="mb-4 sm:text-xl lg:text-3xl text-center font-heading1 text-gray-100 dark:text-white"
@@ -416,57 +416,52 @@
     </section>
 
     <section id="newletter">
-      <!-- start -->
-      <div
-        class="container flex flex-col justify-center items-center mx-auto my-8 py-10"
-      >
-        <div
-          style="
-            background-image: url(https://images.unsplash.com/photo-1538582709238-0a503bd5ae04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
-          "
-          class="max-w-5xl bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"
-        ></div>
-
-        <!-- Card -->
-        <div class="bg-white -mt-28 shadow-md rounded-md overflow-hidden">
-          <div
-            class="items-center justify-between py-10 px-5 bg-white shadow-2xl rounded-lg mx-auto text-center"
-          >
-            <div class="max-w-xl sm:flex px-2 -mt-6">
-              <div class="text-center">
-                <h1
-                  class="font-heading text-3xl text-grey-800 leading-loose my-3 w-full"
+      <div class="bg-white h-screen flex items-center justify-center py-6">
+        <div class="mx-auto w-full max-w-screen-xl bg-blue-700 px-5 py-10">
+          <div class="grid gap-5 md:grid-cols-2 md:gap-10 lg:gap-20">
+            <div class="flex justify-center md:justify-end">
+              <img
+                class="w-full max-w-sm"
+                src="https://ouch-cdn2.icons8.com/sKnF2PmYhkmP28DzIm6KqWSknT03UVWjg3FLlGYIOp4/rs:fit:684:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTI3/L2U4OWQ2NmZiLTg0/NzEtNDc3NS1hNTA0/LTMwNWRiYmJkNzg0/MC5zdmc.png"
+                alt="Marketing newsletter via computer Illustration in PNG, SVG"
+              />
+            </div>
+            <div class="flex items-center">
+              <div class="mx-auto md:mx-0">
+                <h3 class="text-4xl font-bold text-white">Subscribe</h3>
+                <p class="mt-2 max-w-[20rem] text-lg text-white/80">
+                  Join our weekly digest. You'll also receive some of our best
+                  offers today.
+                </p>
+                <form
+                  action=""
+                  name="newsletter"
+                  netlify
+                  class="mt-4 flex flex-col"
                 >
-                  Subscribe to our newsletter
-                </h1>
-                <div class="w-full text-center">
-                  <form action="/index.html" name="newsletter" netlify>
-                    <div class="max-w-lg mx-auto p-1 pr-0 flex items-center">
-                      <input
-                        type="email"
-                        placeholder="yourmail@example.com"
-                        class="flex-1 appearance-none rounded shadow p-3 text-grey-dark mr-2 focus:outline-none"
-                      />
-                      <button
-                        type="submit"
-                        class="bg-blue-600 text-white text-base font-semibold rounded-md shadow-md hover:bg-indigo-600 p-3"
-                      >
-                        Subscribe
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    class="w-full rounded border border-white/50 bg-transparent px-3 py-2 text-white placeholder:text-white/50 md:max-w-[18rem]"
+                  />
+                  <button
+                    type="submit"
+                    class="mt-4 w-full max-w-[14rem] rounded bg-white/30 px-14 py-2 text-center text-white"
+                  >
+                    Subscribe
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <!-- end card -->
       </div>
-      <!-- end -->
     </section>
     <!-- Footer -->
 
-    <footer class="mt-44 p-4 bg-blue-200 sm:p-6 dark:bg-gray-800">
+    <footer class="mt-14 p-4 bg-blue-200 sm:p-6 dark:bg-gray-800">
       <div class="md:flex md:justify-between">
         <div class="mb-6 sm:mt-6 md:mb-0">
           <a href="./index.html" class="flex items-center">
